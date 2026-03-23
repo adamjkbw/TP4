@@ -75,6 +75,24 @@ namespace TP4TUtest
 		//Les nombres factoriels ne sont que entiers et positifs donc ils ne doivent pas être acceptés
 		//On peut retourner -1 pour notifier l'utilisateur que quelque chose n'est pas bon
 	
+		TEST_METHOD(TestMajuscule1) {
+			Assert::AreEqual(contientMajuscule("bonjour"), 0);
+		}
+		TEST_METHOD(TestMajuscule2) {
+			Assert::AreEqual(contientMajuscule("BonJour"), 1);
+		}
+		TEST_METHOD(TestMajuscule3) {
+			Assert::AreEqual(contientMajuscule("ABC"), 1);
+		}
+		TEST_METHOD(TestMajuscule4) {
+			Assert::AreEqual(contientMajuscule(""), 0);
+		}
+
+		const char* maChaine = NULL;
+		TEST_METHOD(TestMajusculeN) {
+			Assert::AreEqual(contientMajuscule(maChaine), 0);
+		}
+
 
 
 
