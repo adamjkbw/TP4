@@ -11,12 +11,14 @@ int max2(int a, int b) {
     else {
         return b;
     }
-    return a;
 }
 
 int factorielle(int n) {
+    if (n < 0) {
+        return -1;
+    }
     int resultat = 1;
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i <= n; i++) {
         resultat *= i;
     }
     return resultat;

@@ -53,7 +53,28 @@ namespace TP4TUtest
 			Assert::AreEqual(max2(4, 4), 4);
 		}
 
-		//le test 2 car c'est le seul ou le parametre b est le bon
+		//le test 2 car c'est le seul ou le parametre b est le 
+
+		TEST_METHOD(TestFactoriel1) {
+			Assert::AreEqual(factorielle(0), 1);
+		}
+		TEST_METHOD(TestFactoriel2) {
+			Assert::AreEqual(factorielle(1), 1);
+		}
+		TEST_METHOD(TestFactoriel3) {
+			Assert::AreEqual(factorielle(4), 24);
+		}
+		TEST_METHOD(TestFactoriel4) {
+			Assert::AreEqual(factorielle(5), 120);
+		}
+
+		TEST_METHOD(TestFactorielN) {
+			Assert::AreEqual(factorielle(-3), 1);
+		}
+
+		//Les nombres factoriels ne sont que entiers et positifs donc ils ne doivent pas être acceptés
+		//On peut retourner -1 pour notifier l'utilisateur que quelque chose n'est pas bon
+	
 
 
 
