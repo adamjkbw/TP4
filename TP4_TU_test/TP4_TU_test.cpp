@@ -41,9 +41,20 @@ namespace TP4TUtest
 			Assert::AreEqual(max2(5, 3), 5);
 		}
 
-		TEST_METHOD(TestMax2_1) {
+		TEST_METHOD(TestMax2_2) {
 			Assert::AreEqual(max2(3, 5), 5);
 		}
+
+		TEST_METHOD(TestMax2_3) {
+			Assert::AreEqual(max2(-1, -8), -1);
+		}
+
+		TEST_METHOD(TestMax2_4) {
+			Assert::AreEqual(max2(4, 4), 4);
+		}
+
+		//le test 2 car c'est le seul ou le parametre b est le bon
+
 
 
 
