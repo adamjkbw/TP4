@@ -94,6 +94,25 @@ namespace TP4TUtest
 		}
 
 
+		TEST_METHOD(TestDivision1) {
+			Assert::AreEqual(divisionExacte(10, 2), 1);
+		}
+
+		TEST_METHOD(TestDivision2) {
+			Assert::AreEqual(divisionExacte(10, 3), 0);
+		}
+
+		TEST_METHOD(TestDivision3) {
+			Assert::AreEqual(divisionExacte(0, 5), 1);
+		}
+
+		TEST_METHOD(TestDivisionParZero) {
+			Assert::AreEqual(divisionExacte(10, 0), 0);
+		}
+
+		//Car il essaie de faire une division par 0 ce qui est impossible
+
+		
 
 
 
