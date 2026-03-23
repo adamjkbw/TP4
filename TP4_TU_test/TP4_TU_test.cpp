@@ -112,7 +112,30 @@ namespace TP4TUtest
 
 		//Car il essaie de faire une division par 0 ce qui est impossible
 
-		
+		TEST_METHOD(TestSomme1) {
+			int t[] = { 1, 2, 3 };
+			Assert::AreEqual(sommeTableau(t, 3), 6);
+		}
+
+		TEST_METHOD(TestSomme2) {
+			int t[] = { 5 };
+			Assert::AreEqual(sommeTableau(t, 1), 5);
+		}
+
+		TEST_METHOD(TestSomme3) {
+			int t[] = { -1, 4, -3 };
+			Assert::AreEqual(sommeTableau(t, 3), 0);
+		}
+
+		TEST_METHOD(TestSommeTailleZero) {
+			int t[] = { 1, 2 };
+			Assert::AreEqual(sommeTableau(t, 0), 0);
+		}
+
+		TEST_METHOD(TestSommePointeurNul) {
+			Assert::AreEqual(sommeTableau(NULL, 0), 0);
+			Assert::AreEqual(sommeTableau(NULL, 10), 0);
+		}
 
 
 
