@@ -69,7 +69,7 @@ namespace TP4TUtest
 		}
 
 		TEST_METHOD(TestFactorielN) {
-			Assert::AreEqual(factorielle(-3), 1);
+			Assert::AreEqual(factorielle(-3), -1);
 		}
 
 		//Les nombres factoriels ne sont que entiers et positifs donc ils ne doivent pas être acceptés
